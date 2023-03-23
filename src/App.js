@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import BingoBoard from "./components/BingoBoard/BingoBoard";
+import WinEffect from "./components/WinEffect/WinEffect";
+import {useState} from "react";
 
 function App() {
+  const [winEffectIsShowing, setWinEffectIsShowing] = useState(false);
+
+  function showWinEffect() {
+    setWinEffectIsShowing(true);
+    setTimeout(() => setWinEffectIsShowing(false), 5800);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BingoBoard showWinEffect={showWinEffect} />
+      {winEffectIsShowing && <WinEffect/>}
     </div>
   );
 }

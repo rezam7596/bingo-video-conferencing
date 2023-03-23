@@ -1,0 +1,25 @@
+.boardCell {
+    height: 100%;
+}
+
+.cell-back,
+.cell-front {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: url("./speaker.png"), pointer;
+}
+
+.cell-front {
+    background-color: #FFFFFF;
+    color: #024C69;
+}
+
+.cell-back {
+    background-color: #024C69;
+    color: #fff;
+}

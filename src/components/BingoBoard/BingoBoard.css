@@ -1,0 +1,20 @@
+.bingoBoard {
+  max-width: 100%;
+}
+
+.bingoBoard table {
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+
+.bingoBoard table td {
+  width: calc( min(80vw, 80vh) / 5);
+  height: calc( min(80vw, 80vh) / 5);
+}
+
+@media (max-width: 700px) {
+  .bingoBoard table td {
+    font-size: 0.8em;
+    height: calc( 80vh / 5);
+  }
+}
