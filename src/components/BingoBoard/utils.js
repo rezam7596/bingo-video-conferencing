@@ -115,5 +115,13 @@ function getBingoPhrases() {
     'You will send the minutes?',
     'Sorry, I was on mute',
     'can you repeat please?',
+    'Thank you for joining us today',
+    'How is everyone?',
+    '___ is absent today.',
+    'The main objective today is ___',
+    'Could you please speak one at a time?',
+    'Could you dial in again?',
+    'What do you mean by ___',
+    'Let me explain that in another way.',
   ]
 }

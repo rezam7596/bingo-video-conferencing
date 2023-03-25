@@ -13,7 +13,7 @@ function BingoBoard({ showWinEffect }) {
           <tr key={i}>
             {row.map((cell, j) => (
               <td key={j} onClick={() => toggleBoardCell(i, j)}>
-                <BoardCell phrase={cell.phrase} selected={!cell.centered && cell.selected} />
+                <BoardCell phrase={cell.phrase} selected={!cell.centered && cell.selected} center={cell.centered} />
               </td>
             ))}
           </tr>

@@ -1,9 +1,12 @@
 .boardCell {
     height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .cell-back,
-.cell-front {
+.cell-front,
+.center-cell {
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,4 +25,21 @@
 .cell-back {
     background-color: #024C69;
     color: #fff;
+    font-family: siller, Roboto, sans-serif;
+    font-size: 2em;
+}
+
+.center-cell {
+    background-color: #024C69;
+}
+
+.center-cell img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+@media  (max-width: 600px), (max-height: 600px) {
+    .cell-back {
+        font-size: 1.3em;
+    }
 }

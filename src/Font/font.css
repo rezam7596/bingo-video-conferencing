@@ -1,0 +1,7 @@
+@font-face {
+    font-family: siller;
+    font-style: normal;
+    font-weight: 10;
+    src: url('siller.ttf') format('truetype');
+    font-display: swap;
+}

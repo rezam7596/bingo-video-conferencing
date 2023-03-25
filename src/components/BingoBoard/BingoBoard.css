@@ -12,9 +12,14 @@
   height: calc( min(80vw, 80vh) / 5);
 }
 
-@media (max-width: 700px) {
+@media  (max-width: 600px), (max-height: 600px) {
+  .bingoBoard table {
+    border-spacing: 5px;
+  }
+
   .bingoBoard table td {
-    font-size: 0.8em;
-    height: calc( 80vh / 5);
+    font-size: 0.7em;
+    width: min(calc( 87vw / 5), calc( min(87vw, 87vh) / 3));
+    height: min(calc( 87vh / 5), calc( min(87vw, 87vh) / 3));
   }
 }

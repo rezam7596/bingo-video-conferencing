@@ -1,3 +1,4 @@
+import './Font/font.css';
 import './App.css';
 import BingoBoard from "./components/BingoBoard/BingoBoard";
 import WinEffect from "./components/WinEffect/WinEffect";
